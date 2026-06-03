@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TR ♥ MW 모바일 청첩장</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section class="hero">
+    <div class="overlay">
+      <p class="small-text">Wedding Invitation</p>
+      <h1>TR ♥ MW</h1>
+      <p class="hero-date">2026년 10월 17일 토요일 오후 2시</p>
+      <p class="hero-place">고려대학교 교수회관 2층</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>초대합니다</h2>
+    <p class="message">
+      서로의 삶 속에서 따뜻한 위로가 되어온 두 사람이
+      소중한 분들을 모시고 새로운 시작을 함께하려 합니다.
+      귀한 걸음으로 축복해 주시면 감사하겠습니다.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>신랑 · 신부 소개</h2>
+    <div class="profile-card">
+      <div class="profile-item">
+        <p class="profile-role">소년</p>
+        <h3>명원</h3>
+        <p>차분하고 성실한 사람</p>
+        <p>좋아하는 것 · 커피, 산책, 여행</p>
+      </div>
+
+      <div class="profile-divider"></div>
+
+      <div class="profile-item">
+        <p class="profile-role">소녀</p>
+        <h3>태리</h3>
+        <p>따뜻하고 밝은 사람</p>
+        <p>좋아하는 것 · 꽃, 음악, 사진</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>예식 안내</h2>
+    <div class="card info-card">
+      <p><strong>일시</strong><br />2026년 10월 17일 토요일 오후 2시</p>
+      <p><strong>장소</strong><br />라움 아트센터 2층</p>
+      <p><strong>주소</strong><br />서울특별시 강남구 언주로 564</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>오시는 길</h2>
+    <div class="card">
+      <p class="map-text">
+        아래 버튼을 누르시면 지도 앱에서 예식장 위치를 확인하실 수 있습니다.
+      </p>
+      <div class="button-group">
+        <a
+          class="btn"
+          href="https://map.naver.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          네이버 지도 보기
+        </a>
+        <a
+          class="sub-btn"
+          href="https://maps.google.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          구글 지도 보기
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>사진 갤러리</h2>
+    <div class="gallery-grid">
+      <img
+        src="./images/gallery1.jpg"
+        alt="웨딩 사진 1"
+        class="gallery-image"
+        onclick="openLightbox(this)"
+      />
+      <img
+        src="./images/gallery2.jpg"
+        alt="웨딩 사진 2"
+        class="gallery-image"
+        onclick="openLightbox(this)"
+      />
+      <img
+        src="./images/gallery3.jpg"
+        alt="웨딩 사진 3"
+        class="gallery-image"
+        onclick="openLightbox(this)"
+      />
+      <img
+        src="./images/gallery4.jpg"
+        alt="웨딩 사진 4"
+        class="gallery-image"
+        onclick="openLightbox(this)"
+      />
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>마음 전하실 곳</h2>
+    <div class="account-card">
+      <div class="account-item">
+        <p class="account-label">신랑측</p>
+        <p class="account-number">국민은행 12345678901234</p>
+        <button class="copy-btn" type="button" onclick="copyAccount(this)">계좌번호 복사</button>
+      </div>
+
+      <div class="account-divider"></div>
+
+      <div class="account-item">
+        <p class="account-label">신부측</p>
+        <p class="account-number">국민은행 98765432109876</p>
+        <button class="copy-btn" type="button" onclick="copyAccount(this)">계좌번호 복사</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>공유하기</h2>
+    <div class="card">
+      <p class="share-text">
+        소중한 분들께 모바일 청첩장을 공유해 보세요.
+      </p>
+      <div class="button-group">
+        <button class="btn" type="button" onclick="shareInvitation()">일반 공유</button>
+        <button class="sub-btn" type="button" onclick="copyPageLink()">링크 복사</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" type="button" onclick="closeLightbox(event)">×</button>
+    <button class="lightbox-nav lightbox-prev" type="button" onclick="showPrevImage(event)">‹</button>
+    <img id="lightbox-image" class="lightbox-image" alt="확대 이미지" />
+    <button class="lightbox-nav lightbox-next" type="button" onclick="showNextImage(event)">›</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
