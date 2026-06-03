@@ -11,7 +11,7 @@ body {
 }
 
 .hero {
-  min-height: 100vh;
+  min-height: 50vh;
   background-image: url("./images/hero-main.jpg");
   background-size: cover;
   background-position: center;
@@ -26,7 +26,7 @@ body {
 .overlay {
   width: 100%;
   max-width: 430px;
-  padding: 36px 24px;
+  padding: 24px 18px;
   border-radius: 24px;
   background: rgba(255, 255, 255, 0.78);
   box-shadow: 0 10px 30px rgba(78, 111, 145, 0.14);
