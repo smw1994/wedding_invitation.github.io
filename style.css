@@ -11,7 +11,7 @@ body {
 }
 
 .hero {
-  min-height: 50vh;
+  min-height: 100vh;
   background-image: url("./images/hero-main.jpg");
   background-size: cover;
   background-position: center;
@@ -20,13 +20,13 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 24px;
+  padding: 18px;
 }
 
 .overlay {
   width: 100%;
-  max-width: 430px;
-  padding: 24px 18px;
+  max-width: 340px;
+  padding: 18px 14px;
   border-radius: 24px;
   background: rgba(255, 255, 255, 0.78);
   box-shadow: 0 10px 30px rgba(78, 111, 145, 0.14);
@@ -34,15 +34,15 @@ body {
 }
 
 .small-text {
-  margin: 0 0 10px;
-  font-size: 14px;
-  letter-spacing: 2px;
+  margin: 0 0 8px;
+  font-size: 12px;
+  letter-spacing: 1.6px;
   color: #7388a3;
 }
 
 .hero h1 {
-  margin: 0 0 14px;
-  font-size: 38px;
+  margin: 0 0 10px;
+  font-size: 34px;
   color: #35506d;
   font-weight: 700;
 }
@@ -50,17 +50,17 @@ body {
 .hero-date,
 .hero-place {
   margin: 4px 0;
-  font-size: 17px;
+  font-size: 15px;
   color: #415a74;
 }
 
 .section {
-  padding: 56px 20px;
+  padding: 28px 20px;
   text-align: center;
 }
 
 .section:first-of-type {
-  padding-top: 100vh;
+  padding-top: 28px;
 }
 
 .section h2 {
